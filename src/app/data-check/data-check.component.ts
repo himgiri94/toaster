@@ -49,13 +49,23 @@ export class DataCheckComponent implements OnInit {
 
   public showError() {
     this.toastr.error('You are passing a String', 'Error', {
-      timeOut: 30000,
+      timeOut: 50000,
+      tapToDismiss: false,
+      progressAnimation: 'decreasing',
+      progressBar: true,
+      positionClass: 'error-toast',
+      closeButton: true
     });
   }
 
   public showInfo() {
     this.toastr.info('Providing data for another id', 'Info', {
-      disableTimeOut: true
+      timeOut: 50000,
+      tapToDismiss: false,
+      progressAnimation: 'increasing',
+      progressBar: true,
+      positionClass: 'info-toast',
+      closeButton: true
     });
   }
 

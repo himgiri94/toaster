@@ -35,6 +35,14 @@
     top: 12px;
     right: 12px;
   }
+  .error-toast {
+    left: 0;
+    bottom: 12px;
+}
+.info-toast {
+  right: 0;
+  bottom: 12px;
+}
   .toast-bottom-right {
     right: 12px;
     bottom: 12px;
